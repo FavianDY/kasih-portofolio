@@ -52,20 +52,19 @@ body {
 /* Photo and Info Section */
 .photo-and-info {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin: 20px;
+  padding: 50px;
   background-color: rgb(240, 140, 140);
-  justify-content: flex-start;
 }
 
 .profile-info {
-  max-width: 600px;
-  font-size: 100px;
   margin-left: 20px;
 }
 
 .profile-info h2 {
-  font-size: 90px;
+  font-size: 50px;
   color: #000000;
   margin-bottom: 20px;
   background-color: rgb(244, 227, 160);
@@ -83,12 +82,12 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 80vh;
+  justify-content: center;
   padding-left: 20px;
 }
 
 .photo img {
-  height: 50%;
+  width: 100%;
   object-fit: cover;
   border-radius: 10px;
   animation: fadeIn 2s ease-in-out;
@@ -383,5 +382,11 @@ footer {
 
   .edu-col {
     margin: 0 15%; /* Adjust margin for better alignment */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    position: absolute;
   }
 }
