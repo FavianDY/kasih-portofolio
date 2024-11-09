@@ -1,0 +1,387 @@
+/* General Styles */
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Background and Layout */
+body {
+  background-color: rgb(244, 227, 160);
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: rgb(242, 110, 136);
+  width: 100%;
+  padding: 15px 0;
+}
+
+.ul-navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.li-navbar {
+  background-color: rgba(255, 211, 100, 0.9);
+  border: 5px solid rgb(248, 55, 55);
+  padding: 15px 25px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.li-navbar a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+}
+
+.li-navbar:hover {
+  background-color: rgba(255, 100, 100, 0.8);
+  transform: scale(1.05);
+}
+
+/* Photo and Info Section */
+.photo-and-info {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  background-color: rgb(240, 140, 140);
+  justify-content: flex-start;
+}
+
+.profile-info {
+  max-width: 600px;
+  font-size: 100px;
+  margin-left: 20px;
+}
+
+.profile-info h2 {
+  font-size: 90px;
+  color: #000000;
+  margin-bottom: 20px;
+  background-color: rgb(244, 227, 160);
+}
+
+.profile-info p {
+  font-size: 20px;
+  color: #0d0101;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  background-color: rgb(244, 244, 160);
+}
+
+.photo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80vh;
+  padding-left: 20px;
+}
+
+.photo img {
+  height: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Animasi fade-in untuk foto */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Footer Section */
+.container-footer {
+  text-align: center;
+  margin: 40px 0;
+}
+.container {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+h2.biodata-nav {
+  background-color: rgba(255, 211, 100, 0.9);
+  border: 5px solid rgb(248, 55, 55);
+  padding: 15px 25px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+/* Biodata Section */
+.biodata {
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  padding: 20px;
+  margin: 20px;
+  background-color: rgb(240, 140, 140);
+}
+
+.info-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-title h2 {
+  font-size: 32px;
+  color: #333;
+}
+
+.info-col {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-row {
+  display: flex;
+}
+
+.info-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info-row ul {
+  list-style-type: none;
+  padding: 0 50px;
+}
+
+.info-row ul li {
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+/* pendidikan */
+.education {
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(244, 227, 160);
+  margin: 20px;
+  text-align: center;
+}
+
+.education h2 {
+  background-color: rgba(255, 211, 100, 0.9);
+  border: 5px solid rgb(248, 55, 55);
+  padding: 15px 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.edu-row {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu-col {
+  width: 30%;
+  text-align: center;
+}
+.edu-logo-container {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.edu-logo {
+  width: 50%;
+}
+
+.edu-p-container {
+}
+
+.edu-p-container p {
+  font-weight: bold;
+  font-size: 32px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.edu-img:hover {
+  transform: scale(1.05);
+}
+
+.skill {
+  /* padding: 20px; */
+  background-color: rgb(244, 227, 160);
+  text-align: center;
+}
+.flex-skill {
+  padding-top: 20px;
+}
+
+.skill-title h2 {
+  background-color: rgba(255, 211, 100, 0.9);
+  border: 5px solid rgb(248, 55, 55);
+  padding: 15px 25px;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.skill-col {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.skill-row {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.skill-vid iframe {
+  width: 100%;
+  height: auto;
+}
+
+.skill-desc {
+  font-weight: bold;
+}
+
+.musics {
+  background-color: rgb(244, 227, 160);
+}
+.music-title h2 {
+  background-color: rgba(255, 211, 100, 0.9);
+  border: 5px solid rgb(248, 55, 55);
+  padding: 15px 25px;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+music-container {
+  width: 100%;
+}
+
+.music-row {
+  width: 100%;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.music-col {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-p-container {
+  width: 50%;
+}
+
+.music-p-container p {
+  font-size: 24px;
+  color: #333;
+}
+
+.music-logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+footer {
+  padding: 5px;
+  border-top: rgb(248, 55, 55) solid 5px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 200px;
+  margin: 50px 0 0 0;
+  background-color: rgb(244, 227, 160);
+}
+
+.footer {
+  border-top: rgba(255, 211, 100, 0.9) solid 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ul-navbar {
+    flex-direction: column;
+  }
+
+  .li-navbar {
+    padding: 12px 20px;
+    margin: 5px 0;
+  }
+
+  .photo {
+    padding: 30px 0;
+  }
+
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .biodata,
+  .hobbies,
+  .baru-lagi {
+    padding: 15px;
+  }
+
+  .edu-row {
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px;
+  }
+
+  .edu-col {
+    margin: 0 15%; /* Adjust margin for better alignment */
+  }
+}
